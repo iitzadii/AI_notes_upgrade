@@ -4,7 +4,7 @@ import os
 
 # Gemini client
 client = genai.Client(
-    api_key="AIzaSyAdgThaoRM8wCRatwV9LF889oOBHHyNzsw"
+    api_key=""
 )
 
 
