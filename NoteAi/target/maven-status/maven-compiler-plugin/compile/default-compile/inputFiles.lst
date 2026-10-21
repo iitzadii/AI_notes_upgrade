@@ -1,0 +1,17 @@
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\config\CorsConfig.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\config\RestClientConfig.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\controller\AuthController.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\controller\MessageController.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\dto\AISummaryRequest.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\dto\LoginRequest.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\dto\NoteBody.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\dto\RegisterRequest.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\entity\User.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\NoteAiApplication.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\repository\UserRepository.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\security\CustomUserDetailsService.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\security\JwtAuthenticationFilter.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\security\JwtService.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\security\SecurityConfig.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\service\NoteService.java
+C:\Users\ADITYA\Desktop\NoteAi\NoteAi\src\main\java\com\Aditya\NoteAi\service\UserService.java

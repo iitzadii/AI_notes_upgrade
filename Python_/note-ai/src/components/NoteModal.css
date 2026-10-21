@@ -1,0 +1,226 @@
+/* NoteModal.css */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Darker backdrop */
+  backdrop-filter: blur(4px);
+  /* Glassmorphism backdrop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-container {
+  background-color: var(--bg-card, #23232a);
+  /* Fallback */
+  color: var(--text-primary, #fff);
+  padding: 2.5rem;
+  border-radius: 24px;
+  /* Rounded heavily like iOS/Modern */
+  width: 90%;
+  max-width: 650px;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* The note- classes from App.css set specific backgrounds and text colors. */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+}
+
+.modal-close-btn {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: inherit;
+  /* Take from parent (dark or light) */
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+
+.modal-close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: rotate(90deg);
+}
+
+.modal-body {
+  margin-top: 1rem;
+}
+
+/* Note Display Mode */
+.note-display .note-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  white-space: pre-wrap;
+  /* Allow wrapping */
+  word-break: break-word;
+  /* Prevent overflow */
+}
+
+/* Custom Scrollbar for Note Content & Body */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.note-display .note-content {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  white-space: pre-wrap;
+  /* Removed max-height here, using container if needed or auto expands */
+}
+
+.note-content-scroll {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  /* space for scrollbar */
+}
+
+/* Edit Mode */
+.edit-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal-container input,
+.modal-container textarea {
+  background: rgba(0, 0, 0, 0.2);
+  /* Darker background for inputs */
+  border: 1px solid transparent;
+  /* Remove border */
+  color: inherit;
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: inherit;
+  transition: all 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-container input:focus,
+.modal-container textarea:focus {
+  background: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.edit-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  /* Underline style for title */
+  border-radius: 0 !important;
+  background: transparent !important;
+  padding-left: 0 !important;
+}
+
+.edit-title:focus {
+  border-bottom-color: var(--accent-color) !important;
+}
+
+.edit-content {
+  min-height: 400px;
+  /* Taller area */
+  resize: none;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.modal-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.modal-buttons button {
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.modal-buttons button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.edit-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: inherit;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.save-btn {
+  background-color: #10b981;
+  /* Green */
+  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}

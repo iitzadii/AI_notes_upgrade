@@ -1,0 +1,85 @@
+.general-notes-page {
+  padding: 20px;
+  width: 100%;
+}
+
+/* Top bar: title centered, search on right */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Heading at center horizontally */
+.general-heading {
+  flex: 1;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Search aligned right */
+.search-bar {
+  width: 250px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  color: white;
+  background-color: #2f2f4f;
+}
+
+/* Notes grid */
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 per row */
+  gap: 1rem;
+}
+
+/* Note card styling */
+.note-card {
+  background: #2b2b3d;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  word-break: break-word;
+  box-sizing: border-box;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card h3 {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  margin-bottom: 0.5rem;
+}
+
+.note-card p {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+/* Empty state */
+/* Empty state */
+/* Empty state — full width center */
+.no-notes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* perfect horizontal centering */
+  align-items: center;
+  margin-top: 200px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #888;
+}
